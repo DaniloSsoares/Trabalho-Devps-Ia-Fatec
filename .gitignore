@@ -1,0 +1,115 @@
+# ─────────────────────────────────────────────
+#  Ambientes Virtuais Python
+# ─────────────────────────────────────────────
+venv/
+.venv/
+env/
+.env/
+ENV/
+
+# ─────────────────────────────────────────────
+#  Cache e Bytecode Python
+# ─────────────────────────────────────────────
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+.Python
+
+# ─────────────────────────────────────────────
+#  Build / Distribuição
+# ─────────────────────────────────────────────
+build/
+dist/
+*.egg-info/
+*.egg
+.eggs/
+
+# ─────────────────────────────────────────────
+#  Outputs gerados pelo sistema
+# ─────────────────────────────────────────────
+graficos/
+*.png
+*.jpg
+*.jpeg
+*.svg
+*.pdf
+
+# ─────────────────────────────────────────────
+#  Arquivos de dados (se gerados localmente)
+# ─────────────────────────────────────────────
+*.csv
+*.json
+*.parquet
+*.pkl
+*.pickle
+
+# ─────────────────────────────────────────────
+#  Logs e relatórios
+# ─────────────────────────────────────────────
+*.log
+logs/
+reports/
+
+# ─────────────────────────────────────────────
+#  IDEs e Editores
+# ─────────────────────────────────────────────
+# VSCode
+.vscode/
+*.code-workspace
+
+# PyCharm / JetBrains
+.idea/
+*.iml
+
+# Vim / Neovim
+*.swp
+*.swo
+*~
+
+# Jupyter
+.ipynb_checkpoints/
+*.ipynb
+
+# ─────────────────────────────────────────────
+#  Testes e cobertura
+# ─────────────────────────────────────────────
+.pytest_cache/
+.coverage
+coverage.xml
+htmlcov/
+.tox/
+
+# ─────────────────────────────────────────────
+#  Variáveis de ambiente e segredos
+# ─────────────────────────────────────────────
+.env
+.env.*
+!.env.example
+secrets.py
+
+# ─────────────────────────────────────────────
+#  Sistema operacional
+# ─────────────────────────────────────────────
+# Linux
+.directory
+*~
+
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Windows
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+
+# ─────────────────────────────────────────────
+#  Mypy / type checkers
+# ─────────────────────────────────────────────
+.mypy_cache/
+.dmypy.json
+dmypy.json
+.pytype/
