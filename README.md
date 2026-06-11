@@ -14,6 +14,18 @@ Sistema em Python que usa mineração de regras de associação para identificar
 
 ---
 
+## 🔍 O que é o Algoritmo Apriori?
+
+O **Apriori** é um algoritmo clássico de **mineração de dados**, proposto por Agrawal e Srikant em 1994. Ele é utilizado para descobrir **padrões ocultos em grandes conjuntos de transações** — como um supermercado que quer saber quais produtos são frequentemente comprados juntos.
+
+O nome "Apriori" vem do princípio fundamental que o guia:
+
+> **Princípio Apriori:** Se um conjunto de itens é **frequente**, então **todos os seus subconjuntos também são frequentes**. E, inversamente, se um itemset é **infrequente**, nenhum de seus superconjuntos pode ser frequente.
+
+Essa propriedade permite **podar o espaço de busca** drasticamente, tornando o algoritmo eficiente mesmo com milhares de produtos.
+
+---
+
 ## 🔍 Sobre o Projeto
 
 O projeto utiliza o **algoritmo Apriori** para aprender padrões de compras frequentes e, a partir disso, detectar transações que fogem do comportamento normal.
