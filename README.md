@@ -1,5 +1,8 @@
 # 🛒 Detecção de Anomalias em Compras com Algoritmo Apriori
 
+[![CI](https://github.com/DaniloSsoares/Trabalho-Devps-Ia-Fatec/actions/workflows/ci.yml/badge.svg)](https://github.com/DaniloSsoares/Trabalho-Devps-Ia-Fatec/actions/workflows/ci.yml)
+![Python](https://img.shields.io/badge/python-3.9%2B-blue)
+
 Sistema em Python que usa mineração de regras de associação para identificar compras incomuns em transações de supermercado.
 
 ---
@@ -97,6 +100,20 @@ python3 main.py --graficos
 
 # Personalizando parâmetros
 python3 main.py --normais 300 --anomalas 30 --suporte 0.04 --confianca 0.45 --percentil 92
+```
+
+---
+
+## 🧪 Testes
+
+O projeto possui uma suíte de testes automatizados (`pytest`) que roda no CI a cada push e pull request.
+
+```bash
+# Instalar dependências de desenvolvimento
+pip install -r requirements-dev.txt
+
+# Rodar os testes
+python -m pytest -v
 ```
 
 ---

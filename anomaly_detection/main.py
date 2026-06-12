@@ -20,6 +20,12 @@ import argparse
 import sys
 import os
 
+# Garante saída UTF-8 no terminal (Windows usa cp1252 por padrão, o que
+# quebra ao imprimir os caracteres de caixa e emojis do relatório).
+if hasattr(sys.stdout, "reconfigure"):
+    sys.stdout.reconfigure(encoding="utf-8")
+    sys.stderr.reconfigure(encoding="utf-8")
+
 # Garante que os módulos do pacote sejam encontrados
 sys.path.insert(0, os.path.dirname(__file__))
 
