@@ -1,4 +1,4 @@
-# 🛒 Detecção de Anomalias em Compras com Algoritmo Apriori
+# Detecção de Anomalias em Compras com Algoritmo Apriori
 
 [![CI](https://github.com/DaniloSsoares/Trabalho-Devps-Ia-Fatec/actions/workflows/ci.yml/badge.svg)](https://github.com/DaniloSsoares/Trabalho-Devps-Ia-Fatec/actions/workflows/ci.yml)
 ![Python](https://img.shields.io/badge/python-3.9%2B-blue)
@@ -7,7 +7,7 @@ Sistema em Python que usa mineração de regras de associação para identificar
 
 ---
 
-## 📚 Sumário
+## Sumário
 
 - [Sobre o Projeto](#-sobre-o-projeto)
 - [Estrutura do Projeto](#-estrutura-do-projeto)
@@ -17,7 +17,7 @@ Sistema em Python que usa mineração de regras de associação para identificar
 
 ---
 
-## 🔍 O que é o Algoritmo Apriori?
+## O que é o Algoritmo Apriori?
 
 O **Apriori** é um algoritmo clássico de **mineração de dados**, proposto por Agrawal e Srikant em 1994. Ele é utilizado para descobrir **padrões ocultos em grandes conjuntos de transações** — como um supermercado que quer saber quais produtos são frequentemente comprados juntos.
 
@@ -29,7 +29,7 @@ Essa propriedade permite **podar o espaço de busca** drasticamente, tornando o 
 
 ---
 
-## 🔍 Sobre o Projeto
+## Sobre o Projeto
 
 O projeto utiliza o **algoritmo Apriori** para aprender padrões de compras frequentes e, a partir disso, detectar transações que fogem do comportamento normal.
 
@@ -55,12 +55,12 @@ O projeto utiliza o **algoritmo Apriori** para aprender padrões de compras freq
                     ┌──────────────┴──────────────┐
                     ▼                             ▼
              Score baixo                   Score alto
-             ✅ NORMAL                     🚨 ANOMALIA
+              NORMAL                      ANOMALIA
 ```
 
 ---
 
-## 📁 Estrutura do Projeto
+##  Estrutura do Projeto
 
 ```
 anomaly_detection/
@@ -75,7 +75,7 @@ anomaly_detection/
 
 ---
 
-## ▶️ Como Executar
+##  Como Executar
 
 ### Pré-requisitos
 
@@ -104,7 +104,7 @@ python3 main.py --normais 300 --anomalas 30 --suporte 0.04 --confianca 0.45 --pe
 
 ---
 
-## 🧪 Testes
+## Testes
 
 O projeto possui uma suíte de testes automatizados (`pytest`) que roda no CI a cada push e pull request.
 
@@ -118,7 +118,7 @@ python -m pytest -v
 
 ---
 
-## 🎛️ Parâmetros Disponíveis
+##  Parâmetros Disponíveis
 
 | Parâmetro | Padrão | Descrição |
 |-----------|--------|-----------|
@@ -132,28 +132,28 @@ python -m pytest -v
 
 ---
 
-## 📊 Exemplo de Saída
+##  Exemplo de Saída
 
 ```
 ═══════════════════════════════════════════════════════════════
-  🛒  SISTEMA DE DETECÇÃO DE ANOMALIAS EM COMPRAS
+    SISTEMA DE DETECÇÃO DE ANOMALIAS EM COMPRAS
 ═══════════════════════════════════════════════════════════════
 
-  📊 RESUMO DO DATASET
+   RESUMO DO DATASET
   Total de transações : 220
-  ✅ Normais          : 200 (90.9%)
-  🚨 Anômalas (reais) : 20  (9.1%)
+   Normais          : 200 (90.9%)
+   Anômalas (reais) : 20  (9.1%)
 
-  📊 TOP ITEMSETS FREQUENTES
+   TOP ITEMSETS FREQUENTES
   {arroz}                    25.00%  ███████░░░░
   {feijão}                   20.91%  ██████░░░░░
   {arroz, feijão}            20.45%  ██████░░░░░
 
-  📊 ANOMALIAS DETECTADAS
+   ANOMALIAS DETECTADAS
    ID    Score  Itens
-    42   1.000  🚨 caviar, filé_mignon, salmão...
+    42   1.000   caviar, filé_mignon, salmão...
 
-  📊 MÉTRICAS DE AVALIAÇÃO
+   MÉTRICAS DE AVALIAÇÃO
   Precisão  : 85.00%
   Recall    : 80.00%
   F1-Score  : 82.35%
@@ -161,7 +161,7 @@ python -m pytest -v
 
 ---
 
-## 📖 Referências
+##  Referências
 
 - Agrawal, R., & Srikant, R. (1994). *Fast Algorithms for Mining Association Rules*. VLDB Conference.
 - Han, J., Kamber, M., & Pei, J. (2011). *Data Mining: Concepts and Techniques*. Morgan Kaufmann.
